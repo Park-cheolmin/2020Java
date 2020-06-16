@@ -1,3 +1,4 @@
+package com.min.first.level2;
 /*package com.min.first.repeat;
 
 public class While2 {

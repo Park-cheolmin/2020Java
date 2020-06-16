@@ -1,4 +1,4 @@
-package com.min.first.repeat;
+package com.min.first.level2;
 
 public class While {
 
