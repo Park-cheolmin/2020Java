@@ -32,7 +32,7 @@ public class Misson8 {
 			int input = sc.nextInt();
 			
 			
-			if(input>90 || input<10) {
+			if(input>max || input<min) {
 				System.out.println("잘 못 입력하셨습니다.");	
 			} else if(input>rVal) {
 				System.out.println("Down");
