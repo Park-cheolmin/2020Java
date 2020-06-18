@@ -13,10 +13,8 @@ public class ArrayOrder { //순차정렬
 				if(arr[i]>arr[j]) {
 					temp = arr[i];
 					arr[i] = arr[j];
-					arr[j] = temp;
-					
+					arr[j] = temp;		
 				}
-				
 			}
 				
 			
