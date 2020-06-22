@@ -1,4 +1,4 @@
-package com.min.first.lever3;
+package com.min.first.lever3;  //[생성자]
 
 public class Car {
 	String name;
@@ -6,14 +6,20 @@ public class Car {
 	int cc;
 	
 	public Car() {//생성자의 기본 모양			// 1.이름이 클래스명이랑 똑같다 
-											//2. return타입이없다
+	   //super()는 한번만 실행해야한다		        // 2. return타입이없다
 		this("소나타","흰색",2500);
 		
 		
 	}
 	
+	public Car(String name) {
+		
+		this(name, "검정색" , 3000);
+		
+		
+	}
 	public Car(String name, String color, int cc) {
-		super();//생략 가능       //바로 직속부모
+		super();//생략 가능       //바로 직속부모생성자  부모의 생성자가 먼저 실행된다
 		this.name = name;   //this는 나의 객체 주소값
 		this.color = color;
 		this.cc = cc;
@@ -29,5 +35,6 @@ public class Car {
 		System.out.printf("%s의 컬러는 %s이고 %dcc이다.\n", name, color, cc);
 	}
 }
+
 
 

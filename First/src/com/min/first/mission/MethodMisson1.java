@@ -4,7 +4,7 @@ public class MethodMisson1 {
 
 	public static void main(String[] args) {
 		
-		guguDan(2);
+		guguDan(2);   //void형 기본형태
 		guguDan(4,7); //4~7단까지
 		
 
