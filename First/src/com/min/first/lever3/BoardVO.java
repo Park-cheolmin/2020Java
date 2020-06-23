@@ -1,16 +1,17 @@
 package com.min.first.lever3;
 
 public class BoardVO {
-	private String title;
-	private String content;
+	private String title;    //값넣는방법 : 생성자를통해서 넣는다, setter(메소드)로 넣는다
+	private String content;  //값빼는 방법 : getter
 	private int writeId;
+	//유일하게 public인 멤버필드 == 상수
 	
 	public BoardVO() {
 	}
 	
 	public BoardVO(String title, String content, int writeId) {
 		super();
-		this.title = title;
+		this.title = title;      //this를 쓴이유 : 전역변수 지역변수가 이름이 같아서
 		this.content = content;
 		this.writeId = writeId;
 	}
@@ -21,7 +22,7 @@ public class BoardVO {
 	}
 	
 	public String getTitle() {
-		return this.title;
+		return title;
 	}
 	
 	public void setContent(String content) {
@@ -29,7 +30,7 @@ public class BoardVO {
 	}
 	
 	public String getContent() {
-		return this.content;
+		return content;
 	}
 	
 	public void setWriteId(int writeId) {
@@ -37,7 +38,7 @@ public class BoardVO {
 	}
 	
 	public int getWriteId() {
-		return this.writeId;
+		return writeId;
 	}
 	
 	
