@@ -1,4 +1,4 @@
-package com.min.first.lever3;  //[생성자]
+package com.min.first.level3;  //[생성자]
 
 public class Car {
 	String name;

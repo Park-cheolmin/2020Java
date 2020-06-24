@@ -1,4 +1,4 @@
-package com.min.first.lever3;
+package com.min.first.level3;
 
 public class BoardVO {
 	private String title;    //값넣는방법 : 생성자를통해서 넣는다, setter(메소드)로 넣는다
