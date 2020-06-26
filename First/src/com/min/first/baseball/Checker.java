@@ -6,6 +6,7 @@ public class Checker {
 	public static boolean check(int gameCnt, Baseball b, MyBall mb) {
 		int strike=0;
 		int ball =0;
+		int out =0;
 		
 		for(int i=0; i<gameCnt; i++) {
 			
@@ -16,12 +17,15 @@ public class Checker {
 						strike++;
 					}else {
 						ball++;
+						
 					}
 				}
 			}
 		}
-		if(strike == gameCnt) {
-			
-		}
+		out = gameCnt-strike-ball;
+		
+		System.out.printf("STRIKE : %d , BALL : %d, OUT: %d\n", strike, ball, out );
+		
+		return strike != gameCnt;
 	}
 }

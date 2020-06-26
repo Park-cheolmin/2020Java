@@ -25,14 +25,11 @@ public class MyBall {
 			try {
 				myArr[i] = Integer.parseInt(val);
 			} catch(Exception e) {
-				myArr[i] =0;
-			}
-			if(myArr[i] == 0) {
 				i--;
 				System.out.println("숫자만 입력하세요.");
 				continue;
 			}
-			
+					
 			if(myArr[i]<1 || myArr[i]>9) {
 				System.out.println("1~9 범위 이내의 숫자를 입력해주세요");
 				i--;
