@@ -1,6 +1,6 @@
 package com.min.first.level4;
 
-public class Value {
+public class Value { //class에 final을 붙으면 상속불가능, 변수앞에 붙이면 상수만, 메소드앞에붙이면 오버라이딩 금지
 
 	private int val;
 	
@@ -22,5 +22,11 @@ public class Value {
 			return true;
 		}
 		return false;
+	}
+	@Override
+	public String toString() {
+		return String.valueOf(val); 
+		//return String.format("%d,val); format과  valueOf가 같이만 format은 printf과 사용방법이 같다  
+		//valueOf와 format은 int를 String으로 변환
 	}
 }
