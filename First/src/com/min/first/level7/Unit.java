@@ -1,8 +1,8 @@
 package com.min.first.level7;
 
 public class Unit {
-	private final String NAME;
-	private final int MAX_HP;
+	public final String NAME;
+	public final int MAX_HP;
 	private int current_hp;
 	//final을 넣으면 무조건 메소드에 값을 넣어줘야한다. ex:
 	/*public Unit(){
@@ -18,6 +18,11 @@ public class Unit {
 	
 	public int getCurrent_hp() {
 		return current_hp;
+	}
+	
+	public void setCurrent_hp(int hp) {
+		this.current_hp = hp;
+		
 	}
 	
 	public void getDamage(int damage) {

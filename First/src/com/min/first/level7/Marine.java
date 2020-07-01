@@ -1,6 +1,6 @@
 package com.min.first.level7;
 
-public class Marine extends Unit implements AttackUnit{ //class일때 interface를 상속할떄는 implements 상속과 같은개념
+public class Marine extends Unit implements AttackUnit, Carable{ //class일때 interface를 상속할떄는 implements 상속과 같은개념
 	//implements뒤에 ,를붙이면 interface를 다중상속가능
 	
 	
@@ -17,7 +17,6 @@ public class Marine extends Unit implements AttackUnit{ //class일때 interface�
 			System.out.println("자살방지");
 			return;
 		}
-		
 		System.out.println("다다다다따다~");
 		u.getDamage(damage);
 	}
